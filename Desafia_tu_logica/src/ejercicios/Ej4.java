@@ -17,7 +17,9 @@ public class Ej4 {
 		System.out.println("2. Orden ascendente");
 		int opcion = sc.nextInt();
 		
+		//Switch encargado de dar a elegir al usuario si quiere el orden de los números en ascendente o descendente
 		switch(opcion) {
+		//Case 1 verifica a través de varios if else if si el numero 1,2 y 3 son menores o mayores y los imprime, esto devuelve orden descendente
 		case 1:
 			if(numero1 > numero2 && numero1 > numero3 && numero2 > numero3) {
 				System.out.print(numero1 + " " + numero2 + " " + numero3);
@@ -33,6 +35,8 @@ public class Ej4 {
 				System.out.print(numero3 + " " + numero2 + " " + numero1);
 			}
 			break;
+			
+		//Case 2 verifica a través de varios if else if si el numero 1,2 y 3 son menores o mayores y los imprime, esto devuelve orden ascendente
 		case 2:
 			if(numero1 > numero2 && numero1 > numero3 && numero2 > numero3) {
 				System.out.print(numero3 + " " + numero2 + " " + numero1);
